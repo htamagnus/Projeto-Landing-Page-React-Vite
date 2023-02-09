@@ -1,0 +1,37 @@
+@import "../../styles/Variaveis";
+
+.banner {
+    display: flex;
+    padding: 40px 80px 40px 80px;
+    border-bottom: 1px solid $cor-principal;
+
+    &__titulo {
+        font-size: 55px;
+        text-align: justify;
+        padding: 20px 40px 20px 40px;
+    }
+
+    &__botao {
+        margin: 20px 40px 20px 40px;
+    }
+}
+
+@media screen and (max-width: 480px) { 
+    .banner {
+        display: flex;
+        width: 100%;
+        padding: 0px 0px 0px 0px;
+        flex-direction: column;
+        gap: 20px;
+
+        &__titulo {
+            text-align: center;
+            font-size: 28px;
+            padding: 20px 40px 0px 40px;
+        }
+
+    }
+    .imagem {
+        width: 100%;
+    }
+}

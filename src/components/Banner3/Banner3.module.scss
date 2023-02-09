@@ -1,0 +1,53 @@
+@import "../../styles/Variaveis";
+
+.banner {
+  display: flex;
+  padding-top: 20px;
+  border-bottom: 1px solid $cor-principal;
+  padding-bottom: 20px;
+
+  &__principal {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 60px 10px 60px;
+    text-align: center;
+  }
+
+  &__paragrafo {
+    font-size: 24px;
+  }
+
+  &__botao {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 480px) { 
+  .banner {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    border-bottom: 1px solid $cor-principal;
+    padding-bottom: 20px;
+
+    &__imagens {
+      display: none;
+    }
+    &__titulo {
+      font-size: 28px;
+    }
+    &__paragrafo {
+      font-size: 20px;
+      text-align: justify;
+    }
+
+    &__principal {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px 20px 10px 20px;
+      text-align: center;
+    }
+  }
+}

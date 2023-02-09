@@ -1,0 +1,42 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        width: 100%;
+    }
+}
+
+h2 {
+    font-size: 36px;
+    color: #DA5F17;
+}
+
+p {
+    font-weight: 300;
+}
+
+button {
+    width: 365px;
+    height: 47px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #DA5F17;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        transition: 0.5s;
+        background-color: #682C0E;
+}

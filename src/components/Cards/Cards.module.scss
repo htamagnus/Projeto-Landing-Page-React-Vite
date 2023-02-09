@@ -1,0 +1,61 @@
+@import "../../styles/Variaveis";
+
+.cards {
+  display: flex;
+  justify-content: center;
+  background-color: $cor-principal;
+  padding: 20px 60px 20px 60px;
+  gap: 20px;
+
+  :hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 20px 20px 20px;
+    width: 268px;
+    height: 340px;
+    background: #d9d9d9;
+    box-shadow: 5px 6px 4px -3px #bc5011;
+    border-radius: 10px;
+  }
+
+  &__imagem {
+    margin-top: 10px;
+    width: 120px;
+    height: 120px;
+  }
+
+  &__titulo {
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  &__paragrafo {
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+}
+
+@media screen and (max-width: 480px) { 
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $cor-principal;
+    padding: 20px 60px 20px 60px;
+    gap: 20px;
+
+    &__card {
+      width: 268px;
+      height: 300px;
+    }
+  }
+}

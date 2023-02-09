@@ -1,0 +1,62 @@
+@import "../../styles/Variaveis";
+
+.cabecalho {
+  display: flex;
+  padding-top: 10px;
+  justify-content: flex-end;
+  padding-right: 60px;
+  border-bottom: 1px solid #000000;
+  background-color: $cor-principal;
+
+  &__li {
+    text-decoration: none;
+    color: black;
+  }
+
+  &__logo {
+    padding-left: 60px;
+    padding-right: 640px;
+    padding-bottom: 10px;
+  }
+
+  &__lista {
+    padding-top: 10px;
+    display: flex;
+    list-style: none;
+    gap: 80px;
+    font-size: 18px;
+
+    :hover {
+      cursor: pointer;
+      color: white;
+      transition: 0.3s ease-in-out;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cabecalho {
+    width: 100%;
+    padding-right: 0x;
+    justify-content: center;
+    padding-bottom: 10px;
+
+    &__lista {
+      font-size: 16px;
+      gap: 20px;
+    }
+
+    &__logo {
+        width: 180px;
+        height: 60px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+      }
+
+      &__esconder {
+        display: none;
+      }
+    
+  }
+}
