@@ -9,6 +9,7 @@ import ReactGA from "react-ga";
 
 const TRACKING_ID = "G-9NJD55D22B"; // OUR_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 function App() {
 
