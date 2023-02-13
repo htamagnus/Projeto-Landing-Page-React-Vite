@@ -24,6 +24,10 @@
         flex-direction: column;
         gap: 20px;
 
+        &__botao {
+            margin: 10px 20px 10px 20px;
+        }
+
         &__titulo {
             text-align: center;
             font-size: 28px;
