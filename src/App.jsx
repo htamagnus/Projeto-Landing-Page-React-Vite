@@ -5,6 +5,10 @@ import Banner3 from "./components/Banner3/Banner3"
 import Cards from "./components/Cards/Cards"
 import ProvaSocial from "./components/ProvaSocial/ProvaSocial"
 import Footer from "./components/Footer/Footer"
+import ReactGA from "react-ga";
+
+const TRACKING_ID = "G-9NJD55D22B"; // OUR_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 
 function App() {
 
