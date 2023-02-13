@@ -2,11 +2,9 @@ import React from "react";
 import styles from "./ProvaSocial.module.scss";
 import Banner1 from "../../assets/Banner1.png";
 import Pessoa from "../../assets/Pessoa.png";
-import { Fade } from 'react-reveal'
 
 export default function ProvaSocial() {
   return (
-    <Fade>
     <section className={styles.secao}>
       <img src={Banner1} />
       <div>
@@ -22,6 +20,5 @@ export default function ProvaSocial() {
         </div>
       </div>
     </section>
-    </Fade>
   );
 }

@@ -4,7 +4,6 @@ import Card1 from "../../assets/Card1.png";
 import Card2 from "../../assets/Card2.png";
 import Card3 from "../../assets/Card3.png";
 import Card4 from "../../assets/Card4.png";
-import { Zoom } from "react-reveal";
 
 export default function Cards() {
   const dadosCards = [
@@ -36,7 +35,6 @@ export default function Cards() {
   ];
 
   return (
-    <Zoom>
     <div id="vantagens" className={styles.cards}>
       {dadosCards.map((data) => (
           <section key={data.id} className={styles.cards__card}>
@@ -47,6 +45,5 @@ export default function Cards() {
           </section>
       ))}
     </div>
-    </Zoom>
   );
 }

@@ -2,11 +2,9 @@ import React from "react";
 import styles from "./Banner3.module.scss";
 import Imagem1 from "../../assets/Imagem1.png";
 import Imagem2 from "../../assets/Imagem2.png";
-import { Fade } from "react-reveal";
 
 export default function Banner3() {
   return (
-    <Fade>
     <main id="about" className={styles.banner}>
       <img src={Imagem1} alt="" className={styles.banner__imagens}/>
       <nav className={styles.banner__principal}>
@@ -23,6 +21,5 @@ export default function Banner3() {
       </nav>
       <img src={Imagem2} alt="" className={styles.banner__imagens}/>
     </main>
-    </Fade>
   );
 }
