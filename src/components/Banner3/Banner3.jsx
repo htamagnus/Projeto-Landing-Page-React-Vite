@@ -5,7 +5,7 @@ import Imagem2 from "../../assets/Imagem2.png";
 
 export default function Banner3() {
   return (
-    <main id="about" className={styles.banner}>
+    <main  data-aos="fade-up" data-aos-duration="2000" id="about" className={styles.banner}>
       <img src={Imagem1} alt="" className={styles.banner__imagens}/>
       <nav className={styles.banner__principal}>
         <h2 className={styles.banner__titulo}>O que é o WorkUs?</h2>

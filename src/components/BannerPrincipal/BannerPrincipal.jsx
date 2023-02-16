@@ -6,7 +6,7 @@ import useAnalyticsEventTracker from "../Analytics/Analytics";
 export default function BannerPrincipal() {
   const gaEventTracker = useAnalyticsEventTracker("Contact us");
   return (
-    <div className={styles.banner}>
+    <div data-aos="fade-up" data-aos-duration="1000" className={styles.banner}>
       <nav className={styles.banner__principal}>
         <h1 className={styles.banner__titulo}>
           Crie e gerencie seu fluxo de trabalho no home office com o WorkUs

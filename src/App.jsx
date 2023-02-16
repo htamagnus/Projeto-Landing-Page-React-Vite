@@ -6,10 +6,13 @@ import Cards from "./components/Cards/Cards"
 import ProvaSocial from "./components/ProvaSocial/ProvaSocial"
 import Footer from "./components/Footer/Footer"
 import ReactGA from "react-ga";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const TRACKING_ID = "G-9NJD55D22B"; // OUR_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
-ReactGA.pageview(window.location.pathname + window.location.search);
+
+AOS.init();
 
 function App() {
 

@@ -5,7 +5,7 @@ import Pessoa from "../../assets/Pessoa.png";
 
 export default function ProvaSocial() {
   return (
-    <section className={styles.secao}>
+    <section data-aos="fade-up" data-aos-duration="2000" className={styles.secao}>
       <img src={Banner1} />
       <div>
         <h2 className={styles.secao__titulosecao}>O que falam da WorkUs</h2>

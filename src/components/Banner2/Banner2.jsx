@@ -4,7 +4,7 @@ import Banner2BG from "../../assets/Banner2BG.png";
 
 export default function Banner2() {
   return (
-    <div className={styles.banner}>
+    <div  data-aos="fade-up" data-aos-duration="2000" className={styles.banner}>
       <nav>
         <img className={styles.banner__imagem} src={Banner2BG} alt="" />
       </nav>

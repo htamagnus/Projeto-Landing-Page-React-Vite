@@ -35,7 +35,7 @@ export default function Cards() {
   ];
 
   return (
-    <div id="vantagens" className={styles.cards}>
+    <div  data-aos="fade-up" data-aos-duration="2000"  id="vantagens" className={styles.cards}>
       {dadosCards.map((data) => (
           <section key={data.id} className={styles.cards__card}>
             <img className={styles.cards__imagem} src={data.image}/>
