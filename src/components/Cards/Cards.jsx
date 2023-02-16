@@ -37,7 +37,7 @@ export default function Cards() {
   return (
     <div  data-aos="fade-up" data-aos-duration="2000"  id="vantagens" className={styles.cards}>
       {dadosCards.map((data) => (
-          <section key={data.id} className={styles.cards__card}>
+          <section data-aos="fade-up" data-aos-duration="2000" key={data.id} className={styles.cards__card}>
             <img className={styles.cards__imagem} src={data.image}/>
             <h3 className={styles.cards__titulo}>{data.titulo}</h3>
             <hr size="6" width="100" color="#DA5F17" />
